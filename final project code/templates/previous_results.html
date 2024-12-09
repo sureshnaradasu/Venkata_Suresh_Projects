@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previous Results</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="scores">
+          <h2>Welcome {{user}}!</h2>
+          <h2>Your previous scores are :</h2>
+          {%for i in column_name%} {%if i=="General Knowledge"%}
+          <p>Score in {{i}} quiz: {{score_check[0]}}</p>
+          {%elif i=="Sports"%}
+          <p>Score in {{i}} quiz: {{score_check[1]}}</p>
+          {%elif i=="Computer"%}
+          <p>Score in {{i}} quiz: {{score_check[2]}}</p>
+          {%elif i=="Science And Nature"%}
+          <p>Score in {{i}} quiz: {{score_check[3]}}</p>
+          {%elif i=="Animals"%}
+          <p>Score in {{i}} quiz: {{score_check[4]}}</p>
+          {%else%}
+          <p>no quiz found</p>
+          {%endif%} {%endfor%}
+        </div>
+        <div class="btn">
+          <a href="link"
+            ><input
+              type="submit"
+              name="login"
+              class="register_btn"
+              value="Go To Dashboard"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

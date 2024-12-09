@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <p>Welcome, {{name}}!</p>
+        <p>Quiz List</p>
+        <div class="quiz_list">
+          <form action="/link" method="post">
+            <input type="hidden" name="value" value="GK_questions" />
+            <input type="submit" value="GENERAL KNOWLEDGE" />
+          </form>
+          <form action="/link" method="post">
+            <input type="hidden" name="value" value="sports_questions" />
+            <input type="submit" value="SPORTS" />
+          </form>
+          <form action="/link" method="post">
+            <input type="hidden" name="value" value="computer_questions" />
+            <input type="submit" value="COMPUTER" />
+          </form>
+          <form action="/link" method="post">
+            <input type="hidden" name="value" value="science_questions" />
+            <input type="submit" value="SCIENCE & NATURE" />
+          </form>
+          <form action="/link" method="post">
+            <input type="hidden" name="value" value="animals_questions" />
+            <input type="submit" value="ANIMAL QUIZ" />
+          </form>
+        </div>
+        <form action="/re_render" method="post">
+          <div class="btn">
+            <input
+              type="submit"
+              name="previous"
+              class="register_btn"
+              value="Previous Results"
+            />
+          </div>
+        </form>
+        <form action="/logout">
+          <div class="btn">
+            <input
+              type="submit"
+              name="logout"
+              class="register_btn"
+              value="Logout"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
