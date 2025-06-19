@@ -1,0 +1,113 @@
+System ID,UPC,Item,Vendor #,Retail,Category,Brand,Needed,Reorder Point,Desired Level,QOH,Backorders
+210000000321,75502386679,mineral water sparkling 25.3oz gerolsteiner,,$3.39 ,Beverages  / Bottled water,Gerolsteiner,13,6,15,2,0
+210000000760,602444001409,Wyndmere Carrot Seed 10mL 16,,$19.89 ,Essential oil,Wyndmere Naturals,2,2,3,1,0
+210000003470,733739033406,prostate support 90 sgels NOW FOODS,,$24.99 ,Supplements,Now Foods,2,0,2,0,0
+210000003472,733739014108,boron 100cps 3mg NOW FOODS,,$8.99 ,Supplements / Minerals,Now Foods,1,1,2,1,0
+210000003512,33984017115,magnesium citrate 120tbs solgar,1711,$17.99 ,Supplements / Minerals,Solgar,2,1,2,0,0
+210000003520,33984012493,iron 25 mg 90vcps solgar,1249,$13.49 ,Supplements / Minerals,Solgar,2,1,2,0,0
+210000003556,33984022607,potassium 100 Tabs solgar,2260,$11.99 ,Supplements / Minerals,Solgar,1,1,2,1,0
+210000003604,684088232364,silver dropper 10ppm 2oz,61CS10,$14.99 ,Supplements / Minerals,Natural Immunogenics,3,0,3,0,0
+210000003874,76314302017,Emergen-C box C raspberry,,$17.99 ,Supplements,Alacer Corp,2,1,3,1,0
+210000004002,33984027060,L-Theanine 150mg 60vcps solgar,,$33.99 ,Supplements,Solgar,2,1,2,0,0
+210000004264,33984003118,biotin 1000mcg 100 vcps solgar,311,$13.49 ,Supplements / Vitamin B,Solgar,3,1,3,0,0
+210000004272,33984031104,B 6 100mg 100vcps,3110,$11.99 ,Supplements / Vitamin B,Solgar,3,1,3,0,0
+210000004378,741273013976,rescue remedy spray 7ml,BA0118,$18.99 ,Supplements,Bach,3,1,3,0,0
+210000004632,308078250908,B&T Arniflora Gel 1oz,TF0029,$8.95 ,Personal Care,B & T,3,2,4,1,0
+210000004652,308078252971,B & T Triflora Gel 2.75oz,,$17.99 ,Personal Care,B & T,2,1,3,1,0
+210000004660,308078254920,B & T Sports Gel 2.5oz,,$14.99 ,Personal Care,B & T,2,1,3,1,0
+210000004666,741273013952,rescue remedy spray 20ml,,$27.99 ,Supplements,Bach,2,1,3,1,0
+210000004730,354973292147,nux vomica 30x 250tbs,,$9.99 ,Supplements / Homeopathic,Hyland's,1,1,2,1,0
+210000005084,33674160008,red clover 500mg 100cps,,$5.50 ,Supplements / Herbal capsules,Nature's Way,2,1,2,0,0
+210000005092,33674151501,nettle 435mg 100cps,NW0191,$11.99 ,Supplements / Herbal capsules,Nature's Way,1,1,2,1,0
+210000005220,33674171004,slippery elm bark 370mg 100cps,,$11.99 ,Supplements / Herbal capsules,Nature's Way,2,1,2,0,0
+210000005310,33984008007,zinc chelated 100tbs solgar,800,$5.00 ,Supplements / Minerals,Solgar,1,1,2,1,0
+210000006062,870434005519,ready clean tropical fuit 1 pint,,$24.99 ,Supplements,Detoxify,3,1,4,1,0
+210000006066,870434007711,ready clean grape 1 pint,,$24.99 ,Supplements,Detoxify,3,1,4,1,0
+210000006268,33674106006,black walnut 100cps,NW0020,$13.99 ,Supplements / Herbal capsules,Nature's Way,1,1,2,1,0
+210000006272,354973325722,Calms Forte Sleep Aid 100 tbs,,$11.99 ,Supplements / Homeopathic,Hyland's,3,1,3,0,0
+210000006850,97467044609,papaya enzyme 180tbs nature's plus,4460,$9.49 ,Supplements,Nature's Plus,2,1,3,1,0
+210000007596,32917000545,chamomile lavender 16 tea bags,TD0179,$5.99 ,Tea / Tea boxed,Traditional Medicinals,5,3,6,1,0
+210000007622,27018099314,sweet & spicy OG caffeine free 18bags,GE0046,$5.39 ,Tea / Tea boxed,Good Earth,6,2,6,0,0
+210000007664,26395830329,aloe vera inner fillet juice pf 32oz glass lily of the desert,,$10.29 ,Beverages  / Aloe,Lily of the Desert,5,3,6,1,0
+210000007704,33674154502,pau d arco 100cps,,$9.99 ,Supplements / Herbal capsules,Nature's Way,2,1,2,0,0
+210000007856,26664338617,MSM 1000mg   180cps,,$17.99 ,Supplements / Joint,Food Science,1,1,2,1,0
+210000007985,8274000061,ginger brew original 12oz  bottle single reed's,,$2.19 ,Beverages  / Soda,Reeds,20,4,24,4,0
+210000008165,306969998519,oscillococcinum 6 doses,BM0024,$16.99 ,Supplements / Cold & flu,Boiron,5,2,6,1,0
+210000008263,354973296510,backache w/arnica,,$12.59 ,Supplements / Homeopathic,Hyland's,2,1,2,0,0
+210000008374,33984013186,glucosamine chondroitin MSM triple strength 60tbs solgar,,$39.99 ,Supplements / Joint,Solgar,2,1,3,1,0
+210000008430,33984035478,E 400IU 100vcps solgar,3547,$29.99 ,Supplements,Solgar,1,1,2,1,0
+210000008434,33984016002,E liquid 2oz solgar,1600,$14.49 ,Supplements,Solgar,3,1,3,0,0
+210000008844,76314302031,Emergen-C box Super orange,,$17.99 ,Supplements,Alacer Corp,3,1,3,0,0
+210000009558,97467039506,kelp 300tbs nature's plus,3950,$9.89 ,Supplements / Herbal capsules,Nature's Plus,3,1,3,0,0
+210000009614,49568020167,Follow Your Heart Vegenaise Grapeseed 16 oz.,,$8.49 ,Condiments,Follow Your heart,4,2,6,2,0
+210000011378,33674793206,urinary with cranberry 100cps,NW0852,$12.99 ,Supplements / Herbal capsules,Nature's Way,2,1,2,0,0
+210000012684,83000006876,yohimbe af 1oz,,$18.99 ,Supplements / Herbal tinctures,Nature's Answer,2,1,2,0,0
+210000013288,33984016811,L-Lysine 500mg 100vcaps solgar,,$13.79 ,Supplements,Solgar,3,1,3,0,0
+210000013912,722252500014,Clif  Bar Spiced Pumpkin Pie,,$1.99 ,Pantry / Snack Bars,Clif,11,5,12,1,0
+210000013952,722430200163,kombucha gingerade 16oz gt's,,$4.69 ,Beverages  / Kombucha,GT'S,19,9,24,5,0
+210000014434,26395840328,aloe vera whole leaf juice pf 32oz glass,,$10.29 ,Beverages  / Aloe,Lily of the Desert,6,3,6,0,0
+210000014640,27018301349,sweet & spicy original 18bgs,GE0002,$5.39 ,Tea / Tea boxed,Good Earth,5,1,6,1,0
+210000014778,33674007006,cayenne extra hot 100000HU 100cps,,$11.99 ,Supplements / Herbal capsules,Nature's Way,2,1,2,0,0
+210000014968,33984019560,melatonin 60tbs 10mg solgar,1956,$15.99 ,Supplements,Solgar,3,1,3,0,0
+210000015956,726899552740,kelp liquid,,$6.29 ,Supplements / Herbal tinctures,World Organic,2,1,2,0,0
+210000016504,741273000594,Bach Rescue Remedy Cream 30gm / 1oz,,$12.99 ,Personal Care / Skin care,Bach,2,1,3,1,0
+210000016963,733739074300,lavender essential oil organic 1oz NOW FOODS,,$23.99 ,Essential oil,Now Foods,6,2,6,0,0
+210000017554,722430900162,kombucha guava goddess 16oz gt's,,$4.69 ,Beverages  / Kombucha,GT'S,12,3,12,0,0
+210000017682,354973322219,bronchial cough 100tbs,,$12.99 ,Supplements / Cold & flu,Hyland's,3,1,3,0,0
+210000017802,7137256878824,green tea OG 100ct,,$7.89 ,Tea / Tea boxed,Mt. Spring Intl,12,3,12,0,0
+210000018340,41954000111,herbalozenge menthol 15 loz bag zand,ZA0018,$2.99 ,Supplements / Cold & flu,Zand,6,2,6,0,0
+210000018402,733739074706,tea tree organic oil 1oz NOW FOODS,,$12.99 ,Essential oil,Now Foods,6,2,6,0,0
+210000018788,856822001585,dates medjool 8oz tierra,,$6.19 ,Fruit / Dried fruit,Tierra Farms,12,3,12,0,0
+210000019642,364031513800,lozenge cough drops pine 18 loz,,$6.59 ,Supplements / Cold & flu,A. Vogel,4,1,4,0,0
+210000019646,26395401321,aloe vera detox green label 32oz,LI0005,$17.59 ,Beverages  / Aloe,Lily of the Desert,3,1,3,0,0
+210000019680,33984015951,B12 liquid 2000mcg 2oz Solgar,,$13.89 ,Supplements,Solgar,2,1,2,0,0
+210000019860,736210612763,borage  OG seeds,,$2.69 ,Garden / Garden seeds,Botanical Interests,1,2,3,2,0
+210000020260,736210603051,dill OG seeds,,$2.49 ,Garden / Garden seeds,Botanical Interests,5,2,5,0,0
+210000020268,736210313486,bean bush blue lake 274,,$2.39 ,Garden / Garden seeds,Botanical Interests,5,2,5,0,0
+210000020284,736210305450,melon cantaloupe hale's seeds,,$2.49 ,Garden / Garden seeds,Botanical Interests,3,2,5,2,0
+210000020356,741273014577,pastilles blk currant 50gm,,$9.99 ,Supplements,Bach,4,2,6,2,0
+210000020528,843213000821,pepitas spicy 4oz Tierra,,$3.19 ,Nuts/seeds,Tierra Farms,12,3,12,0,0
+210000020858,736210308758,tomato san marzano seeds,,$2.49 ,Garden / Garden seeds,Botanical Interests,3,2,5,2,0
+210000021122,354973311114,nat sulph 500tbs,,$13.49 ,Supplements / Homeopathic,Hyland's,2,0,2,0,0
+210000021361,736210602764,basil italian genovese OG seeds,,$2.69 ,Garden / Garden seeds,Botanical Interests,5,2,5,0,0
+210000021582,744665001018,silver salve 2oz,,$15.99 ,Personal Care / Skin care,TriMedica,3,1,3,0,0
+210000021590,308078127989,sciatic-aide 100tbs,,$11.49 ,Supplements / Homeopathic,B & T,2,1,2,0,0
+210000021722,24182159318,Eden Agar Agar,,$12.49 ,Pantry / Seaweed,Eden Foods,4,2,6,2,0
+210000022354,33984013179,glucosamine h/a chond msm 120tbs solgar,1317,$52.99 ,Supplements / Joint,Solgar,2,1,2,0,0
+210000023520,852834002008,Beanitos Black Bean Chips W/Salt,,$4.99 ,Snacks / Chips,Beanitos,7,5,10,3,0
+210000024128,733739069528,stevia glycerite 2oz NOW FOODS,,$8.99 ,Pantry / Sweeteners,Now Foods,3,1,4,1,0
+210000024366,33984012066,multi men 120tbs solgar,1206,$43.99 ,Supplements / Multi,Solgar,2,1,2,0,0
+210000024370,33984012059,multi women 120tbs solgar,1206,$39.99 ,Supplements / Multi,Solgar,2,1,3,1,0
+210000024378,33984010161,multi child kangavite 120tbs solgar,,$17.59 ,Supplements / Children,Solgar,3,1,3,0,0
+210000024770,83000017001,green tea energy 2oz,,$2.99 ,Supplements,Nature's Answer,12,3,12,0,0
+210000024782,812475012255,alo allure mangosteen & mango 16.9oz,1396118,$2.99 ,Beverages  / Aloe,alo,12,5,12,0,0
+210000024838,33984001503,L-Arginine 1000mg 90tbs,,$24.99 ,Supplements,Solgar,2,1,2,0,0
+210000025452,32917002310,hibiscus OG 16tea bags traditional medicinals,,$5.99 ,Tea / Tea boxed,Traditional Medicinals,6,2,6,0,0
+210000025460,42608451051,pineapple juice OG 12.5 oz,,$4.39 ,Fruit / Fruit juice / single serv juice,Lakewood,12,3,12,0,0
+210000025597,733739051561,"empty ""0"" gelatin capsules 250 NOW FOODS",5156,$5.99 ,Supplements,Now Foods,3,1,3,0,0
+210000025669,33674150245,Nature's Way Primadophilus Reuteri 90vcps,,$35.69 ,Supplements / Probiotic enzymes,Nature's Way,2,1,3,1,0
+210000025781,608883000010,water alkaline 1.5 L eternal,,$2.99 ,Beverages  / Bottled water,Eternal,12,4,12,0,0
+210000025895,83000006289,goldenseal AF 1oz,,$21.99 ,Supplements / Herbal tinctures,Nature's Answer,2,1,2,0,0
+210000026116,42608459439,apple juice OG 32oz,348649,$7.59 ,Fruit / Fruit juice,Lakewood,9,3,12,3,0
+210000026218,21078010289,wellness colloidal silver throat spray 2oz source naturals,,$18.49 ,Supplements / Minerals,Source naturals,3,1,3,0,0
+210000026564,733739056207,apricots OG 16oz NOW FOODS,,$8.99 ,Fruit / Dried fruit,Now Foods,4,2,6,2,0
+210000026584,42608470137,blueberry  juice OG 32oz lakewood,,$14.79 ,Fruit / Fruit juice,Lakewood,11,2,12,1,0
+210000026709,33919000458,butterscotch beer single bottle flying cauldron,1275,$2.19 ,Beverages  / Soda,Virgil's,20,4,24,4,0
+210000027306,93966001228,Organic Prairie Pork Bratwurst Dogs,,$11.29 ,Meat,Organic Prairie,4,1,4,0,0
+210000028384,42608432364,grape concord juice OG 32oz,644054,$10.39 ,Fruit / Fruit juice,Lakewood,12,3,12,0,0
+210000029338,32917001986,heart hawthorn 16 tea bags,,$5.99 ,Tea / Tea boxed,Traditional Medicinals,6,2,6,0,0
+210000029553,25317120005,AppleGate Turkey Bacon,,$5.99 ,Meat,Applegate Farms,3,1,4,1,0
+210000029913,873024001007,Ener-C Orange box,,$13.99 ,Supplements / Vitamin C,Ener-C,1,1,2,1,0
+210000029959,97467458611,spirutein banana pkts nature's plus,95861,$2.29 ,Protein powder,Nature's Plus,7,3,8,1,0
+210000030593,93966001099,Organic Prairie Ground Beef Chub 12 oz,,$11.09 ,Meat,Organic Prairie,4,2,4,0,0
+210000031531,718334220055,Desert Essence Jojoba Oil 2 oz.,DE0003,$9.79 ,Personal Care / Skin care,Desert Essence,1,3,1,0,0
+210000032796,705105500362,Tea Hills Farm Apple Chicken Patties,,$0.00 ,Meat / Local meat,Tea Hills Farm,3,1,4,1,0
+210000032808,705105500560,Tea Hills Farm Country Chicken Patties,,$0.00 ,Meat / Local meat,Tea Hills Farm,4,1,4,0,0
+210000032822,705105500768,Tea Hills Farm Chicken Patties Herbs de Provence,,$0.00 ,Meat / Local meat,Tea Hills Farm,8,1,8,0,0
+210000034761,32917001498,green ginger OG 16 tea bags,,$5.99 ,Tea / Tea boxed,Traditional Medicinals,4,2,6,2,0
+210000035423,76314302024,Emergen-C box C Tangerine,,$17.99 ,Supplements,Alacer Corp,3,1,3,0,0
+210000036135,885898000321,Emergen-C box Immune +  Raspberry,,$15.99 ,Supplements,Alacer Corp,2,0,2,0,0
+210000036139,853311003051,kevita strawberry coconut 15.2oz,,$4.49 ,Beverages  / Kombucha,KeVita,12,3,12,0,0
+210000037817,733739070166,pine nuts OG 8oz NOW FOODS,7016,$18.99 ,Nuts/seeds,Now Foods,6,1,6,0,0
+210000041395,700360003122,maitake mushrooms dried OG .5oz Mycological,PMTS,$4.79 ,Vegetables / Dried ,MycoLogical,5,2,6,1,0
+210000045108,733739070227,brazil nuts raw OG 10 oz NOW FOODS,7022,$11.99 ,Nuts/seeds,Now Foods,4,2,4,0,0
