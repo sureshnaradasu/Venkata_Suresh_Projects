@@ -1,0 +1,211 @@
+DROP TABLE SIG_Membership;
+DROP TABLE Membership_Renewal;
+DROP TABLE AIS_Member_Professional;
+DROP TABLE AIS_Member_Academic;
+DROP TABLE AIS_Member_Student;
+DROP TABLE Conference_Registration;
+DROP TABLE Conference;
+DROP TABLE AIS_Member;
+
+
+
+CREATE TABLE AIS_Member(
+	Member_ID INTEGER,
+	MemberType TEXT,
+	Code_Of_Ethics_Agreement TEXT NOT NULL DEFAULT 'Y',
+	Member_Email TEXT NOT NULL,
+	Name TEXT NOT NULL,
+	Phone TEXT NOT NULL,
+	CONSTRAINT AIS_Member_PK PRIMARY KEY(Member_ID),
+	CONSTRAINT AIS_Member_Email_U UNIQUE (Member_Email),
+	CONSTRAINT AIS_Member_Phone_U UNIQUE (Phone),
+	CONSTRAINT MEMBER_TYPE_CHK CHECK (MemberType IN ('Student','Academic','Professional')),
+	CONSTRAINT MEMBER_EMP_EMAIL_CHK CHECK (Member_Email like '%_@%_.%_'),
+	CONSTRAINT EMPLOYEE_ETHICS_CHK CHECK (Code_Of_Ethics_Agreement IN ('Y','N'))
+);
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2331,'Professional','rdowneyj@gmail.com','Robert Downey','5988261587');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2332,'Academic','cevans@gmail.com','Chris Evans','2238121875');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2333,'Student','chemsworth@gmail.com','Chris Hemsworth','5588761387');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2334,'Student','sjohansson@gmail.com','Scarlett Johansson','5978461757');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2335,'Professional','mruffalo@gmail.com','Mark Ruffalo','7975462812');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2336,'Academic','jrenner@gmail.com','Jeremy Renner','2775163812');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2337,'Professional','thiddleston@gmail.com','Tom Hiddleston','2354173512');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2338,'Student','tholland@gmail.com','Tom Holland','2853254781');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2339,'Academic','eolsen@gmail.com','Elizabeth Olsen','4754256412');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2340,'Student','cpratt@gmail.com','Chris Pratt','4654346782');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2341,'Student','alice.johnson@example.com','Alice Johnson','1234567890');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2342,'Student','david.smith@example.com','David Smith','2345678901');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2343,'Student','emily.davis@example.com','Emily Davis','3456789012');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2344,'Student','michael.wilson@example.com','Michael Wilson','4567890123');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2345,'Student','olivia.taylor@example.com','Olivia Taylor','5678901234');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2346,'Student','benjamin.anderson@example.com','Benjamin Anderson','6789012345');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2347,'Professional','sophia.brown@example.com','Sophia Brown','7890123456');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2348,'Professional','daniel.martin@example.com','Daniel Martin','8901234567');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2349,'Professional','grace.clark@example.com','Grace Clark','9012345678');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2350,'Professional','jacob.hall@example.com','Jacob Hall','0123456789');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2351,'Professional','chloe.white@example.com','Chloe White','9876543210');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2352,'Professional','ethan.lee@example.com','Ethan Lee','8765432109');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2353,'Professional','isabella.turner@example.com','Isabella Turner','7654321098');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2354,'Academic','liam.harris@example.com','Liam Harris','6543210987');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2355,'Academic','madison.adams@example.com','Madison Adams','5432109876');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2356,'Academic','noah.scott@example.com','Noah Scott','4321098765');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2357,'Academic','lily.king@example.com','Lily King','3210987654');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2358,'Academic','william.murphy@example.com','William Murphy','2109876543');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2359,'Academic','abigail.green@example.com','Abigail Green','1098765432');
+INSERT INTO AIS_Member(Member_ID,MemberType,Member_Email,Name,Phone) VALUES (2360,'Academic','christopher.wilson@example.com','Christopher Wilson','9987654321');
+
+
+CREATE TABLE AIS_Member_Student(
+	Member_ID INTEGER,
+	"Dissertation Title" TEXT,
+	School	TEXT,
+	CONSTRAINT AIS_Member_Student_PK PRIMARY KEY (Member_ID),
+	CONSTRAINT AIS_Member_Student_FK1 FOREIGN KEY (Member_ID)
+	REFERENCES AIS_Member(Member_ID)
+);
+
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2333,'Exploring the Impact of Artificial Intelligence on Modern Marketing Strategies: A Consumer Behavior Perspective','Evergreen University');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2334,'Analyzing the Effects of Climate Change on Biodiversity in Tropical Rainforests: Case Study of the Amazon Basin','Meadowbrook State University');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2338,'Understanding the Role of Emotional Intelligence in Leadership Effectiveness: A Comparative Study of Fortune 500 CEOs','Crestview College');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2340,'The Influence of Social Media on Political Discourse and Civic Engagement: A Cross-Cultural Analysis','Pacifica University');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2341,'A Comprehensive Study of Cybersecurity Threats and Countermeasures in the Financial Sector','Greenwood Institute of Technology');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2342,'The Evolution of Sustainable Urban Planning: Assessing the Smart City Initiatives in Developing Countries','Oakridge Junior High');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2343,'Examining the Implications of Virtual Reality and Augmented Reality in Education: Enhancing Learning Outcomes in K-12 Settings','Sunridge State College');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2344,'Investigating the Psychosocial Factors Affecting Mental Health Among College Students: A Longitudinal Analysis','Aurora University');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2345,'Evaluating the Economic Impact of Renewable Energy Adoption in Rural Communities: Case Study of Wind Power in the Midwest','Silverlake University');
+INSERT INTO AIS_Member_Student(Member_ID,"Dissertation Title",School) VALUES (2346,'The Role of Gender and Stereotypes in the Tech Industry: A Study on Women Representation and Career Progression','Harmony College of Arts and Sciences');
+
+CREATE TABLE AIS_Member_Academic(
+	Member_ID INTEGER,
+	"Rank" TEXT,
+	School	TEXT,
+	CONSTRAINT AIS_Member_Academic_PK PRIMARY KEY (Member_ID),
+	CONSTRAINT AIS_Member_Academic_FK1 FOREIGN KEY (Member_ID)
+	REFERENCES AIS_Member(Member_ID)
+);
+
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2332,'Freshman','Evergreen University');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2336,'Sophomore','Crestview College');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2339,'Junior','Meadowbrook State University');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2354,'Senior','Pacifica University');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2355,'Graduate Student','Greenwood Institute of Technology');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2356,'PhD Candidate','Rivertown University');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2357,'Postdoctoral Fellow','Sunridge State College');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2358,'Adjunct Professor','Aurora University');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2359,'Assistant Professor','Silverlake University');
+INSERT INTO AIS_Member_Academic(Member_ID,"Rank",School) VALUES (2360,'Associate Professor','Harmony College of Arts and Sciences');
+
+CREATE TABLE AIS_Member_Professional(
+	Member_ID INTEGER,
+	Title TEXT,
+	Organization TEXT,
+	CONSTRAINT AIS_Member_Professional_PK PRIMARY KEY (Member_ID),
+	CONSTRAINT AIS_Member_Professional_FK1 FOREIGN KEY (Member_ID)
+	REFERENCES AIS_Member(Member_ID)
+);
+
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2331,'Senior Software Engineer','Tech Innovators, Inc');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2335,'Marketing Manager','BrightStar Marketing Solutions');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2337,'Human Resources Director','Global Talent Partners');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2347,'Financial Analyst','Capital Investments Group');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2348,'Registered Nurse','Mercy General Hospital');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2349,'Senior Graphic Designer','Creative Concepts Agency');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2350,'Project Manager','Elite Construction Services');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2351,'Senior Research Scientist','Quantum Laboratories');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2352,'Sales Executive','StellarTech Solutions');
+INSERT INTO AIS_Member_Professional(Member_ID,Title,Organization) VALUES (2353,'Legal Counsel','Smith & Associates Law Firm');
+
+CREATE TABLE "Conference" (
+	"Conference_ID"	INTEGER,
+	"Category"	TEXT NOT NULL DEFAULT 'DOMESTIC',
+	"Location"	TEXT,
+	"Name"	TEXT NOT NULL,
+	"Date"	TEXT NOT NULL,
+	CONSTRAINT Conference_ID_PK PRIMARY KEY (Conference_ID),
+	CONSTRAINT CONFERENCE_CATEGORY_CHK CHECK (Category IN ('INTERNATIONAL','DOMESTIC','COMBINED')),
+	CONSTRAINT Conference_Date_CHK CHECK ("Date" like '____-__-__')
+);
+
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('123','San Francisco, CA','TechCon 2023','2023-03-15');
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('456','New York City, NY','EcoSolutions 2023','2023-06-05');
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('789','Sydney, Australia','MedTech Summit','2023-08-17');
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('987','London, UK','FinanceWorld 2023','2023-10-12');
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('234','Chicago, IL','EduSummit 2023','2023-10-25');
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('567','Paris, France','ArtCon 2023','2023-04-08');
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('724','Los Angeles, CA','SportsTech Summit','2023-05-18');
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('457','Las Vegas, NV','MarketingExpo 2023','2023-11-04');
+INSERT INTO Conference(Conference_ID,Location,Name,"Date") VALUES ('128','Berlin, Germany','SocialSciCon 2023','2023-12-09');
+
+
+
+CREATE TABLE "Conference_Registration" (
+	"ConferenceRegistration_ID"	INTEGER,
+	"Member_ID"	INTEGER,
+	"Conference_ID"	INTEGER,
+	"Date"	TEXT,
+	CONSTRAINT ConferenceRegistration_ID_PK PRIMARY KEY (ConferenceRegistration_ID),
+	CONSTRAINT Conference_Registration_Member_ID_FK1 FOREIGN KEY (Member_ID)
+	REFERENCES AIS_Member(Member_ID),
+	CONSTRAINT Conference_Registration_Conference_ID_FK2 FOREIGN KEY (Conference_ID)
+	REFERENCES Conference(Conference_ID),
+	CONSTRAINT Conference_Registration_Date_CHK CHECK ("Date" like '____-__-__')
+);
+
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202301','2331','789','2022-12-05');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202302','2332','128','2022-11-05');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202303','2333','457','2022-05-27');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202304','2334','567','2022-03-18');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202305','2331','123','2022-06-23');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202306','2335','456','2022-05-18');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202307','2336','128','2022-08-22');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202308','2337','567','2022-07-12');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202309','2341','789','2022-07-20');
+INSERT INTO Conference_Registration(ConferenceRegistration_ID,Member_ID,Conference_ID,"Date") VALUES ('202310','2345','567','2022-06-02');
+
+CREATE TABLE "Membership_Renewal" (
+	"Renewal_ID"	INTEGER,
+	"Member_ID"	INTEGER,
+	"Date"	TEXT NOT NULL DEFAULT CURRENT_DATE,
+	"Price"	INTEGER NOT NULL,
+	CONSTRAINT Membership_Renewal_ID_PK PRIMARY KEY (Renewal_ID),
+	CONSTRAINT Membership_Renewal_Member_ID_FK FOREIGN KEY (Member_ID)
+	REFERENCES AIS_Member(Member_ID),
+	CONSTRAINT Price_CHK1 CHECK (Price >= 100),
+	CONSTRAINT Price_CHK2 CHECK (Price <= 1000),
+	CONSTRAINT "Date_CHK1" CHECK ("Date" >= '2000-01-01')
+	
+);
+
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824560','2331','589');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824561','2334','574');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824562','2332','248');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824563','2333','128');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824564','2335','489');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824565','2336','335');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824566','2337','689');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824567','2338','748');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824568','2340','658');
+INSERT INTO Membership_Renewal(Renewal_ID,Member_ID,Price) VALUES ('824569','2341','899');
+
+CREATE TABLE "SIG_Membership" (
+	"SIG_Membership_ID"	INTEGER,
+	"Renewal_ID"	INTEGER,
+	"Name"	TEXT,
+	"SIG_Code"	TEXT,
+	CONSTRAINT SIG_Membership_SIG_Code_U UNIQUE (SIG_Code),
+	CONSTRAINT SIG_Membership_SIG_Code_CHK CHECK (SIG_Code like 'SIG____%'),
+	CONSTRAINT SIG_Membership_ID_PK PRIMARY KEY (SIG_Membership_ID),
+	CONSTRAINT SIG_Membership_Renewal_ID_FK FOREIGN KEY (Renewal_ID)
+	REFERENCES Membership_Renewal(Renewal_ID)
+);
+
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466780','824560','AIS SIG on Cybersecurity and Privacy','SIGu2r19');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466781','824561','AIS SIG on Business Intelligence and Analytics','SIG3thg98');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466782','824562','AIS SIG on Healthcare Information Systems','SIG3ebuwvbg98');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466783','824563','AIS SIG on E-commerce and Digital Marketing','SIG3tug98');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466784','824564','AIS SIG on Blockchain and Distributed Ledger Technology','SIG3t7838');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466785','824565','AIS SIG on Human-Computer Interaction','SIG3thdr788');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466786','824566','AIS SIG on Artificial Intelligence and Machine Learning','SIG3tva6878');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466787','824567','AIS SIG on Green IT and Sustainability','SIG3t3ag8');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466788','824568','AIS SIG on Digital Transformation and Innovation','SIG3twb788');
+INSERT INTO SIG_Membership(SIG_Membership_ID,Renewal_ID,Name,SIG_Code) VALUES ('466789','824569','AIS SIG on IT Project Management and Governance','SIG3tba768a8');
