@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venkata Suresh Naradasu | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --primary: #38bdf8;
+      --text: #f1f5f9;
+      --accent: #1e40af;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      background: radial-gradient(circle at top, #1e293b, #0f0f0f);
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 2px solid var(--primary);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      border-bottom: 1px solid #1e293b;
+      z-index: 10;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+    .project-grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .project {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 1rem;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.02);
+    }
+    .project img {
+      width: 100%;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .tags span {
+      display: inline-block;
+      margin: 0.25rem;
+      background: #1e3a8a;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+    .contact {
+      background: #1e293b;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+    .contact input, .contact textarea, .contact button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1rem;
+    }
+    .contact input, .contact textarea {
+      background: #0f172a;
+      color: var(--text);
+    }
+    .contact button {
+      background: var(--primary);
+      color: var(--bg);
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    footer a {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://drive.google.com/uc?id=1T9WLtVED86fnYSekFoOM1sW2A8IAksxT" alt="Venkata Suresh">
+    <h1>Venkata Suresh Naradasu</h1>
+    <p>Turning Data into Direction — I design analytical systems that drive smart business decisions.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="https://drive.google.com/file/d/1BmEzkMmGOQDDgLHRya4olbqDGCdB3AkQ/view" target="_blank">Resume</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a Business Analyst with 3+ years of experience delivering data-driven solutions across healthcare, finance, and technology. I specialize in transforming raw data into actionable insights, automating workflows, and supporting strategic decision-making. Currently pursuing my Master's in Business Analytics at Kent State University.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="https://drive.google.com/uc?id=1ulpGE88hNq-OgG326IJg1gnyXSgR4TRY" alt="SurveyEase">
+        <h3>SurveyEase – Flask Web App</h3>
+        <p>Built a role-based academic survey platform with real-time analytics dashboard.</p>
+      </div>
+      <div class="project">
+        <img src="https://drive.google.com/uc?id=1NvEee7ODTo1zrmZoKkGiyDv2YaMeMWT8" alt="Financial Reporting">
+        <h3>Financial Reporting Automation</h3>
+        <p>Developed Power BI dashboards and automated financial reporting workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="tags">
+      <span>SQL</span><span>Python</span><span>Power BI</span><span>Tableau</span>
+      <span>Excel (VBA)</span><span>R</span><span>Flask</span><span>JIRA</span>
+      <span>Confluence</span><span>SharePoint</span><span>Salesforce</span><span>Smartsheet</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form class="contact" action="https://formspree.io/f/mwkgrqgy" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Venkata Suresh Naradasu • 
+    <a href="https://github.com/sureshnaradasu/Venkata_Suresh_Projects.git" target="_blank">GitHub</a> • 
+    <a href="https://www.linkedin.com/in/suresh-naradasu-795620145/" target="_blank">LinkedIn</a>
+  </footer>
+</body>
+</html>
